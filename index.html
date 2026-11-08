@@ -116,6 +116,15 @@
   .volt-house-scroll .house-label small{font-size:9px}
   .volt-house-scroll .placed-marker{font-size:11px;padding:3px 5px}
 }
+
+/* ALPHA 1.8 — portraits entiers sur smartphone, sans recadrage du visage */
+@media (max-width: 650px) {
+  .avatar-strip img {width:76px;height:98px;max-width:28vw;object-fit:contain;object-position:center center;background:#091b2a;flex-shrink:0}
+  .intro-card img {width:100%;height:auto;max-height:300px;aspect-ratio:3/4;object-fit:contain;object-position:center center;background:#091b2a}
+  .story .portrait, img.portrait {width:80px;min-width:80px;height:110px;object-fit:contain;object-position:center center;background:#091b2a;flex-shrink:0}
+  .overlay .modal img {width:min(150px,100%);height:180px;max-height:35vh;object-fit:contain;object-position:center center;background:#091b2a;justify-self:center}
+  .ending-character img {width:82px;height:112px;flex:0 0 82px;object-fit:contain;object-position:center center;background:#091b2a}
+}
 </style><style id="volt-photo-comparison-styles">
 .volt-visual-caption{display:block;font:900 9px/1.3 system-ui,sans-serif;color:#7fcee0;letter-spacing:.7px;font-style:normal;margin:2px 0 6px;text-align:center}
 .equipment-card{min-height:155px}.volt-equip-photo,.volt-equip-schema{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px}
